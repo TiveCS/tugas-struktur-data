@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1640052024 source:d:\tivecs\coding\c++\struktur data\tugas\tugas-struktur-data-main\n-to-n\human.cpp
+	"human.h"
+
+1640051938 d:\tivecs\coding\c++\struktur data\tugas\tugas-struktur-data-main\n-to-n\human.h
+	<iostream>
+	"list.cpp"
+
+1640041361 d:\tivecs\coding\c++\struktur data\tugas\tugas-struktur-data-main\n-to-n\list.cpp
+	<iostream>
+
+1640041361 source:d:\tivecs\coding\c++\struktur data\tugas\tugas-struktur-data-main\n-to-n\list.cpp
+	<iostream>
+
+1640188176 source:d:\tivecs\coding\c++\struktur data\tugas\tugas-struktur-data-main\n-to-n\main.cpp
+	"human.cpp"
+
+1640052024 d:\tivecs\coding\c++\struktur data\tugas\tugas-struktur-data-main\n-to-n\human.cpp
+	"human.h"
+
