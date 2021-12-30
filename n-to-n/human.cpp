@@ -1,5 +1,6 @@
 #include "human.h"
 
+// Cek nama child dari parent
 bool Parent::hasChild(string name){
     ListNode<Human> *n = Parent::getChildrens()->getFirst();
     while(n != NULL){
@@ -9,6 +10,7 @@ bool Parent::hasChild(string name){
     return false;
 }
 
+// Tambahkan child ke parent
 void Parent::addChild(Child *c){
     if (Parent::hasChild(c->getName())){
         return;
@@ -17,6 +19,7 @@ void Parent::addChild(Child *c){
     c->getParents()->addElement(this);
 }
 
+// Cari node child dari parent
 ListNode<Human>* Parent::findChildNode(string name){
     ListNode<Human> *n = Parent::getChildrens()->getFirst();
 
@@ -28,6 +31,7 @@ ListNode<Human>* Parent::findChildNode(string name){
     return NULL;
 }
 
+// Cari objek child berdasarkan nama dari parent
 Child* Parent::findChild(string name){
     Child *found = NULL;
     ListNode<Human> *n = findChildNode(name);
@@ -40,6 +44,7 @@ Child* Parent::findChild(string name){
     return found;
 }
 
+// Hapus child dari parent
 void Parent::removeChild(string name){
     ListNode<Human> *n = findChildNode(name);
     if (Parent::getChildrens()->getFirst() == n){
@@ -48,7 +53,7 @@ void Parent::removeChild(string name){
     }
 }
 
-
+// Lihat daftar child dari parent
 void Parent::showChildrens(){
     ListNode<Human> *n = getChildrens()->getFirst();
     string space = "";
@@ -66,6 +71,7 @@ void Parent::showChildrens(){
     cout << "\n";
 }
 
+// Cek jika nama parent ada dari child
 bool Child::hasParent(string name){
     ListNode<Human> *n = Child::getParents()->getFirst();
     while(n != NULL){
@@ -75,6 +81,7 @@ bool Child::hasParent(string name){
     return false;
 }
 
+// Tambahkan parent kedalam child
 void Child::addParent(Parent *p){
     if (Child::hasParent(p->getName())){
         return;
@@ -83,6 +90,27 @@ void Child::addParent(Parent *p){
     p->getChildrens()->addElement(this);
 }
 
+// TODO
+// Hapus parent dari child
+void Child::removeParent(Parent *p){
+
+}
+
+// TODO
+// Cari node parent berdasarkan nama dari child
+ListNode<Human>* Child::findParentNode(string name){
+    ListNode<Human> *found = NULL;
+    return found;
+}
+
+// TODO
+// Cari objek parent berdasarkan nama dari child
+Parent* Child::findParent(string name){
+    Parent *found = NULL;
+    return found;
+}
+
+// Tampilkan daftar parent dari child
 void Child::showParents(){
     ListNode<Human> *n = Child::getParents()->getFirst();
 
