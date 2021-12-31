@@ -5,3 +5,7 @@ n-to-n/obj/Debug/human.o
 n-to-n/obj/Debug/list.o
 n-to-n/obj/Debug/main.o
 n-to-n/main.exe
+1-to-n/bin/Debug/Multi_I.exe
+1-to-n/obj/Debug/list_child.o
+1-to-n/obj/Debug/list_parent.o
+1-to-n/obj/Debug/main.o
