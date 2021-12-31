@@ -1,0 +1,7 @@
+.vscode/launch.json
+.vscode/settings.json
+.vscode/tasks.json
+n-to-n/obj/Debug/human.o
+n-to-n/obj/Debug/list.o
+n-to-n/obj/Debug/main.o
+n-to-n/main.exe
