@@ -219,7 +219,7 @@ void menu(){
                 cout << "Human tidak ditemukan!\n";
             }else{
                 cout << "Masukkan nama baru: "; cin >> name;
-                n->getInfo().setName(name);
+                n->getInfoPtr()->setName(name);
             }
             break;
         }
