@@ -39,13 +39,15 @@ int main() {
     C = alokasi("Eka");
     insertFirst(LC, C);
 
-    cout<<"\nlist child"<<endl;
+    cout<<"\nlist child sebelum direlasikan"<<endl;
     printInfo(LC);
 
     /** RELASIKAN CHILD DENGAN PARENT */
     P = findElm(LP, "Annisa");
     C = findElm(LC, "Andien");
     connect(P,C);
+
+    P = findElm(LP, "Iqbal");
     C = findElm(LC, "Aisyah");
     connect(P,C);
 
@@ -61,6 +63,7 @@ int main() {
 
     cout<<"\nlist child setelah relasi dihapus"<<endl;
     printInfo(LC);
+
     return 0;
 }
 
