@@ -18,49 +18,43 @@ int main() {
     createList(LC);
 
     /** insert parent */
-    P = alokasi(3);
+    P = alokasi_parent("Annisa");
     insertFirst(LP, P);
-    P = alokasi(7);
+    P = alokasi_parent("Fathan");
     insertFirst(LP, P);
-    P = alokasi(2);
+    P = alokasi_parent("Iqbal");
     insertFirst(LP, P);
-    P = alokasi(4);
+    P = alokasi_parent("Adi");
     insertFirst(LP, P);
+
 
     cout<<"list parent"<<endl;
     printInfo(LP);
 
     /** insert child */
-    C = alokasi("A");
+    C = alokasi("Aisyah");
     insertFirst(LC, C);
-    C = alokasi("D");
+    C = alokasi("Andien");
     insertFirst(LC, C);
-    C = alokasi("E");
-    insertFirst(LC, C);
-    C = alokasi("O");
+    C = alokasi("Eka");
     insertFirst(LC, C);
 
-    cout<<"list child"<<endl;
+    cout<<"\nlist child"<<endl;
     printInfo(LC);
 
     /** RELASIKAN CHILD DENGAN PARENT */
-    P = findElm(LP,2);
-    C = findElm(LC, "D");
+    P = findElm(LP, "Annisa");
+    C = findElm(LC, "Andien");
     connect(P,C);
-    C = findElm(LC, "O");
-    connect(P,C);
-
-    P = findElm(LP,3);
-    C = findElm(LC, "E");
+    C = findElm(LC, "Aisyah");
     connect(P,C);
 
-    P = findElm(LP,7);
-    C = findElm(LC, "A");
+    P = findElm(LP,"Fathan");
+    C = findElm(LC, "Eka");
     connect(P,C);
 
-    cout<<"list child setelah direlasikan"<<endl;
+    cout<<"\nlist child setelah direlasikan"<<endl;
     printInfo(LC);
-
     return 0;
 }
 

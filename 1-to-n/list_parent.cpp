@@ -7,7 +7,7 @@ void createList(List_parent &L) {
     first(L) = NULL;
 }
 
-address_parent alokasi(infotype_parent x) {
+address_parent alokasi_parent(infotype_parent x) {
     /**
     * FS : mengembalikan elemen list baru dengan info = x, next elemen = Nil
     */
