@@ -31,6 +31,8 @@ public:
     // Cari objek dari list relasi dengan umur yang ditentukan
     List<Human>* findHuman(int age);
 
+    bool isRelated(Human *h);
+
     // Tampilkan relasi
     Human* showRelation();
 

@@ -16,3 +16,20 @@
 	<iostream>
 	"list_child.h"
 
+1640887273 source:d:\tivecs\coding\c++\struktur data\tugas\tugas-struktur-data\1-to-n\list_child.cpp
+	"list_child.h"
+
+1640887273 d:\tivecs\coding\c++\struktur data\tugas\tugas-struktur-data\1-to-n\list_child.h
+	<iostream>
+	"list_parent.h"
+
+1640887273 d:\tivecs\coding\c++\struktur data\tugas\tugas-struktur-data\1-to-n\list_parent.h
+	<iostream>
+
+1640887273 source:d:\tivecs\coding\c++\struktur data\tugas\tugas-struktur-data\1-to-n\list_parent.cpp
+	"list_parent.h"
+
+1640887273 source:d:\tivecs\coding\c++\struktur data\tugas\tugas-struktur-data\1-to-n\main.cpp
+	<iostream>
+	"list_child.h"
+
