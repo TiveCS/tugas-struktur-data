@@ -70,3 +70,7 @@ address_parent findElm(List_parent L, infotype_parent x) {
     } while(P != first(L));
     return NULL;
 }
+
+void changeParentName(address_parent p, string newname){
+    info(p) = newname;
+}

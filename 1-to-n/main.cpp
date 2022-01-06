@@ -74,6 +74,19 @@ int main() {
     cout<<"\nlist child setelah relasi dihapus"<<endl;
     printInfo(LC);
 
+    P = findElm(LP, "Fathan");
+    changeParentName(P, "Ahmad");
+    cout<<"\nlist child setelah nama parent diganti"<<endl;
+    printInfo(LC);
+
+    C = findElm(LC, "Putra");
+    changeChildName(C, "Enrico");
+
+    C = findElm(LC, "Alif");
+    changeChildName(C, "Andi");
+    cout<<"\nlist child setelah nama child diganti"<<endl;
+    printInfo(LC);
+
     return 0;
 }
 
@@ -84,3 +97,5 @@ void connect(address_parent P, address_child &C) {
 void disconnect(address_child &C) {
     parent(C) = NULL;
 }
+
+

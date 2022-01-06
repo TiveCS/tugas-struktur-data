@@ -36,6 +36,7 @@ address_parent alokasi_parent(infotype_parent x);
 void dealokasi(address_parent &P);
 address_parent findElm(List_parent L, infotype_parent x);
 void printInfo(List_parent L);
+void changeParentName(address_parent p, string newname);
 
 
 #endif // LIST_PARENT_H_INCLUDED

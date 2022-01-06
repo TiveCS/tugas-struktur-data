@@ -55,3 +55,7 @@ void insertAfter(address_child &Prec, address_child P) {
     prev(P) = Prec;
     next(Prec) = P;
 }
+
+void changeChildName(address_child c, string newname){
+    info(c) = newname;
+}

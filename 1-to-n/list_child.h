@@ -45,6 +45,7 @@ address_child alokasi(infotype_child x);
 void dealokasi(address_child &P);
 address_child findElm(List_child L, infotype_child x);
 void printInfo(List_child L);
+void changeChildName(address_child c, string newname);
 
 
 #endif // LIST_CHILD_H_INCLUDED
