@@ -55,6 +55,12 @@ int main() {
 
     cout<<"\nlist child setelah direlasikan"<<endl;
     printInfo(LC);
+
+    C = findElm(LC, "Andien");
+    disconnect(C);
+
+    cout<<"\nlist child setelah relasi dihapus"<<endl;
+    printInfo(LC);
     return 0;
 }
 
