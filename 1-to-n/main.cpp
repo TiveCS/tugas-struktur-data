@@ -22,9 +22,11 @@ int main() {
     insertFirst(LP, P);
     P = alokasi_parent("Fathan");
     insertFirst(LP, P);
-    P = alokasi_parent("Iqbal");
+    P = alokasi_parent("Dudung");
     insertFirst(LP, P);
     P = alokasi_parent("Adi");
+    insertFirst(LP, P);
+    P = alokasi_parent("Putri");
     insertFirst(LP, P);
 
 
@@ -38,6 +40,10 @@ int main() {
     insertFirst(LC, C);
     C = alokasi("Eka");
     insertFirst(LC, C);
+    C = alokasi("Alif");
+    insertFirst(LC, C);
+    C = alokasi("Putra");
+    insertFirst(LC, C);
 
     cout<<"\nlist child sebelum direlasikan"<<endl;
     printInfo(LC);
@@ -46,19 +52,23 @@ int main() {
     P = findElm(LP, "Annisa");
     C = findElm(LC, "Andien");
     connect(P,C);
-
-    P = findElm(LP, "Iqbal");
     C = findElm(LC, "Aisyah");
+    connect(P,C);
+
+    P = findElm(LP, "Putri");
+    C = findElm(LC, "Putra");
     connect(P,C);
 
     P = findElm(LP,"Fathan");
     C = findElm(LC, "Eka");
     connect(P,C);
+    C = findElm(LC, "Alif");
+    connect(P,C);
 
     cout<<"\nlist child setelah direlasikan"<<endl;
     printInfo(LC);
 
-    C = findElm(LC, "Andien");
+    C = findElm(LC, "Putra");
     disconnect(C);
 
     cout<<"\nlist child setelah relasi dihapus"<<endl;
